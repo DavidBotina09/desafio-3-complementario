@@ -85,9 +85,9 @@ alert(`su funcion de ${funcion.pelicula} a las ${funcion.hora} ha sido reservada
 let desicion = prompt("deseas agregar comida a tu reserva").toLowerCase
 switch(desicion){
     case "si":
-        comida.bebida = prompt("que bebida desea").toLowerCase
-        comida.palomitas = prompt("deseas palomitas de sal o de dulce").toLowerCase
-        comida.comida = prompt("deseas alguna comida de sal como hamburguesa, perro caliente, empanada").toLowerCase
+        comida.bebida = prompt("que bebida desea").toLowerCase()
+        comida.palomitas = prompt("deseas palomitas de sal o de dulce").toLowerCase()
+        comida.comida = prompt("deseas alguna comida de sal como hamburguesa, perro caliente, empanada").toLowerCase()
         break
     case "no":
         alert("gracias por verificar tu compra")
