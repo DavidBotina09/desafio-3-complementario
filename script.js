@@ -4,7 +4,7 @@ let clientes = 0
 let edad = 0
 const funcion = {pelicula:"", hora:""}
 const comida = {bebida:"",palomitas:"",comida:""}
-const reservacion = [funcion]
+const reservacion = [funcion,comida]
 console.log(funcion)
 
 function cartelera(pelis){
@@ -81,18 +81,18 @@ do{
 
 alert(`su funcion de ${funcion.pelicula} a las ${funcion.hora} ha sido reservada, el total a pagar es ${valorBoleta * clientes}`)
 
+let desicion
+    
+desicion = prompt("deseas agregar comida a tu reserva").toLowerCase()
+    if(desicion = "si"){
+        comida.bebida = prompt("que bebida desea")
+        comida.palomitas = prompt("deseas palomitas de sal o de dulce")
+        comida.comida = prompt("deseas alguna comida de sal como hamburguesa, perro caliente, empanada")
+    }
+    if(desicion != "si"){
+        alert("gracias por tu compra")
+    }
 
-let desicion = prompt("deseas agregar comida a tu reserva").toLowerCase
-switch(desicion){
-    case "si":
-        comida.bebida = prompt("que bebida desea").toLowerCase()
-        comida.palomitas = prompt("deseas palomitas de sal o de dulce").toLowerCase()
-        comida.comida = prompt("deseas alguna comida de sal como hamburguesa, perro caliente, empanada").toLowerCase()
-        break
-    case "no":
-        alert("gracias por verificar tu compra")
-        break
-}
 
 console.log(comida)
 
