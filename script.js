@@ -3,7 +3,7 @@ let valorBoleta = 5000
 let clientes = 0
 let edad = 0
 const funcion = {pelicula:"", hora:""}
-//const comida = {bebida,palomitas,comida}
+const comida = {bebida:"",palomitas:"",comida:""}
 const reservacion = [funcion]
 console.log(funcion)
 
@@ -81,7 +81,20 @@ do{
 
 alert(`su funcion de ${funcion.pelicula} a las ${funcion.hora} ha sido reservada, el total a pagar es ${valorBoleta * clientes}`)
 
-console.table(`se confirman los datos de su reservacion: su reservacion fue ${reservacion}`)
+
+let desicion = prompt("deseas agregar comida a tu reserva").toLowerCase
+switch(desicion){
+    case "si":
+        comida.bebida = prompt("que bebida desea").toLowerCase
+        comida.palomitas = prompt("deseas palomitas de sal o de dulce").toLowerCase
+        comida.comida = prompt("deseas alguna comida de sal como hamburguesa, perro caliente, empanada").toLowerCase
+        break
+    case "no":
+        alert("gracias por verificar tu compra")
+        break
+}
+
+console.log(comida)
 
 
 
