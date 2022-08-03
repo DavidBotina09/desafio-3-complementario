@@ -82,11 +82,10 @@ do{
 alert(`su funcion de ${funcion.pelicula} a las ${funcion.hora} ha sido reservada, el total a pagar es ${valorBoleta * clientes}`)
 
 let desicion = ""
-let refresco,crispetas,comidaSal
     
 do{
     desicion = prompt("deseas agregar comida a tu reserva").toLowerCase()
-    if(desicion = "si"){
+    if(desicion == "si"){
         comida.bebida = prompt("que bebida desea")
         comida.comida = prompt("deseas alguna comida de sal como hamburguesa, perro caliente, empanada")
         comida.palomitas = prompt("deseas palomitas de sal o de dulce")
