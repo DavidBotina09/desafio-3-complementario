@@ -3,7 +3,7 @@ let valorBoleta = 5000
 let clientes = 0
 let edad = 0
 const funcion = {pelicula:"", hora:""}
-const comida = {bebida:"",palomitas:"",comida:""}
+const comida = {bebida:"no",palomitas:"no",comida:"no"}
 const reservacion = [funcion,comida]
 console.log(funcion)
 
@@ -93,11 +93,12 @@ do{
         alert("reservacion de pelicula sin la comida")
     }
 }while(desicion >= 0)
-
- 
-
-
 console.log(comida)
+
+alert("en el console table te aparecera la confirmacion de tu pedido ya que no lo puedo hacer todavia en la pagina")
+console.table([reservacion])
+console.table([funcion])
+console.table([comida])
 
 
 
